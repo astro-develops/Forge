@@ -42,17 +42,13 @@
     
     </header>
 
-    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>    
-    <div id="container" style="width: 800px; height: 600px; border: 1px solid grey"></div>
-
-
     <table class="layout"> <!-- Added border for visual clarity border="1" -->
     <tr>
     <td rowspan="2">
     <!-- MONACO EDITOR CODE -->
-    <!-- <div class="editor" id="container"></div> -->
-    <!-- Load Monaco Editor Scripts -->
-    <script src="monacoEditorMain.js"></script>
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+    <div class="editor" id="container"></div>
+    <script src="monacoEditorMain.js" type="module"></script>
     <script src="editorMain.js" type="module"></script>
     </td> <!-- rowspan="2" makes this cell span two rows -->
     <td>
@@ -69,21 +65,6 @@
     </td>
     </tr>
     </table>
-
-    <script>
-      
-require.config({ paths: { vs: 'https://unpkg.com/monaco-editor@latest/min/vs' } });
-require(['vs/editor/editor.main'], function () {
-    var editor = monaco.editor.create(document.getElementById('container'), {
-        value: [
-            'const greeting = "Hello, world!";',
-            'console.log(greeting);'
-        ].join('\n'),
-        language: 'javascript',
-        theme: 'vs-dark'
-    });
-});
-    </script>
 
     <script type="module" src="stlViewer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
