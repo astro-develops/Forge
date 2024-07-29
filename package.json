@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "monaco-editor": "^0.50.0",
+    "monaco-editor-webpack-plugin": "^7.1.0",
     "three": "^0.167.0"
   }
 }

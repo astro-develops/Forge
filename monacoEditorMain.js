@@ -1,7 +1,5 @@
-// Load the monaco editor
 
-
-require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } });
+require.config({ paths: { 'vs': '../node_modules/monaco-editor/min/vs' } });
 require(['vs/editor/editor.main'], function () {
 	monaco.languages.register({
 		id: 'myCustomLanguage'
@@ -36,6 +34,7 @@ require(['vs/editor/editor.main'], function () {
 		language: 'c'
 	});
 });
+
 function getCode() {
 	return [ // starting code
 		'cylinder(d1=5,d2=0,h=5,$fn=10);',
