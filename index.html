@@ -27,7 +27,6 @@
         <button style="margin-left: 2%" class="view-buttons" id="exportBtn">Export</button>
         <button style="margin-left: 2%" class="view-buttons" id="downloadBtn">Download</button>
         </div>
-        <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
 
         <div class="dropdown">
             <button class="dropbtn">Resources</button>
@@ -47,8 +46,8 @@
     <tr>
     <td rowspan="2">
     <!-- MONACO EDITOR CODE -->
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
     <div class="editor" id="container"></div>
-    <script src="@/../node_modules/monaco-editor/min/vs/loader.js"></script>
     <script src="monacoEditorMain.js"></script>
     <script src="editorMain.js" type="module"></script>
     </td> <!-- rowspan="2" makes this cell span two rows -->
