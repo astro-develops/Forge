@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="editor.css">
     <script src="openscad.js" type="module"></script>
+    <!-- Load Monaco Editor CSS -->
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="https://unpkg.com/monaco-editor@latest/min/vs/editor/editor.main.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +27,7 @@
         <button style="margin-left: 2%" class="view-buttons" id="exportBtn">Export</button>
         <button style="margin-left: 2%" class="view-buttons" id="downloadBtn">Download</button>
         </div>
+        <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
 
         <div class="dropdown">
             <button class="dropbtn">Resources</button>
