@@ -42,15 +42,16 @@
     
     </header>
 
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>    
+    <div id="container" style="width: 800px; height: 600px; border: 1px solid grey"></div>
+
+
     <table class="layout"> <!-- Added border for visual clarity border="1" -->
     <tr>
     <td rowspan="2">
     <!-- MONACO EDITOR CODE -->
-    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
-    <div class="editor" id="container"></div>
-    <div id="container" style="width: 800px; height: 600px; border: 1px solid grey"></div>
+    <!-- <div class="editor" id="container"></div> -->
     <!-- Load Monaco Editor Scripts -->
-    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>    
     <script src="monacoEditorMain.js"></script>
     <script src="editorMain.js" type="module"></script>
     </td> <!-- rowspan="2" makes this cell span two rows -->
@@ -72,6 +73,6 @@
     <script type="module" src="stlViewer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/loader.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/loader.min.js"></script> -->
 </body>
 </html>
